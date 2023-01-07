@@ -1,0 +1,126 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+a {
+  text-decoration: none;
+}
+
+.display-none {
+  display: none;
+}
+
+.display-block {
+  display: block;
+}
+
+.display-rel {
+  border: 2px solid cyan;
+  border-radius: 10px;
+  margin: 0 20px;
+  background: url("../img/bg.jpg") center/cover no-repeat;
+}
+
+.display-bg {
+  background: rgba(0, 0, 0, 0.36);
+}
+
+.display {
+  display: flex;
+}
+.display--box {
+  width: 50px;
+  height: 50px;
+  border-radius: 10px;
+}
+
+.df {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.players {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.players .player1 {
+  padding-top: 70px;
+  color: red;
+}
+.players .player1 span {
+  color: #00ff59;
+}
+.players .player2 {
+  color: blue;
+}
+.players .player2 span {
+  color: #00ff59;
+}
+
+.time {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+}
+.time h2 {
+  color: #00ff59;
+  font-size: 30px;
+}
+.time button {
+  margin-top: 10px;
+  padding: 10px 20px;
+  color: orange;
+  background: cornflowerblue;
+  border-radius: 10px;
+  border: none;
+  font-size: 20px;
+}
+
+.bg {
+  background: url("/img/1.png") center/cover no-repeat;
+}
+
+.bg1 {
+  background: url("/img/2.png") center/cover no-repeat;
+}
+
+.bgPoint {
+  background: url("/img/3.png") center/cover no-repeat;
+}
+
+.win {
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.58);
+  z-index: 10;
+  display: none;
+}
+.win--window {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.win--window__text {
+  color: white;
+}
+
+/*# sourceMappingURL=style.css.map */
