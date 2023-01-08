@@ -29,8 +29,8 @@ const player2 = document.querySelector('.player2-span')
 const time = document.querySelector('.time-second')
 let countOne = 0
 let countTwo = 0
-function err(){
-    if  (displayRel.classList.contains('check')){
+
+
         window.addEventListener('keydown', (e)=> {
             for (let i = 0;i < arrBox.length;i++){
                 for (let j = 0;j < arrBox[i].length;j++){
@@ -179,15 +179,18 @@ function err(){
             }
         })
 
-    }
-}
+
+
 
 const win = document.querySelector('.win')
 const winText = document.querySelector('.win--window__text')
 startBtn.addEventListener('click',()=> {
-    displayRel.classList.add('check')
+    startBtn.setAttribute('disabled','disabled')
     timeSet()
-    err()
+    countOne = 0
+    player1.innerHTML = countOne
+    countTwo = 0
+    player2.innerHTML = countTwo
     setTimeout(()=>{
         displayRel.classList.remove('check')
         time.innerHTML = '60'
@@ -206,6 +209,7 @@ startBtn.addEventListener('click',()=> {
         setTimeout(()=>{
             win.style.display = 'none'
         }, 5000)
+        startBtn.removeAttribute('disabled')
     }, 60000)
 })
 
